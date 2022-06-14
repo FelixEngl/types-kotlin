@@ -1,13 +1,13 @@
 plugins {
     id("io.github.turansky.kfc.library")
-    `leaflet-declarations`
+    `geojson-declarations`
 }
 
 val kotlinWrappersVersion = property("kotlin-wrappers.version") as String
-val leafletVersion = property("leaflet.version") as String
+val geojsonVersion = property("geojson.version") as String
 
 dependencies {
-    implementation(npm("@types/leaflet", leafletVersion))
+    implementation(npm("@types/geojson", geojsonVersion))
 
 //    implementation(enforcedPlatform("org.jetbrains.kotlin-wrappers:kotlin-wrappers-bom:$kotlinWrappersVersion"))
 //    implementation("org.jetbrains.kotlin-wrappers:kotlin-browser")

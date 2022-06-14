@@ -4,15 +4,13 @@ plugins {
 
 tasks.named("generateDeclarations") {
 //    doLast {
-//        val definitionsDir = rootProject.buildDir
-//            .resolve("js/node_modules/@types/leaflet/index.d.ts")
-//        val typesDir = rootProject.buildDir
-//            .resolve("js/node_modules/react-leaflet/lib")
+//        val definitionsFile = rootProject.buildDir
+//            .resolve("js/node_modules/@types/geojson/index.d.ts")
 //        val sourceDir = projectDir.resolve("src/main/kotlin")
 //
 //        delete(sourceDir)
 //
-//        karakum.leaflet.generateKotlinDeclarations(
+//        karakum.geojson.generateKotlinDeclarations(
 //            definitionsDir = definitionsDir,
 //            typesDir = typesDir,
 //            sourceDir = sourceDir,
